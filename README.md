@@ -24,12 +24,11 @@ There will be many short code examples in these exercises. We encourage you to t
 The text 'Hello world' is in the form of a string. Strings are, in simple terms, just plain text. In Python, a string is denoted as any text between a pair or quotation marks (such as 'a string'), or between a pair of double quotations marks (such as "another string").
 The print() function will output the provided string when run.
  
-
 *While strings exists in almost all programming languages, languages differs in how to define them. In java, only double quotations denote a string! Such "rules" of a language is commonly referred to as the "syntax" of a language.*
 
 
 ## Exercise 1
-Make sure you can run the above code, either on your computer or in the browser.
+Make sure you can run the above code, either on your computer or in the browser. Follow the instructions in "Setting up Python" above, and ask us for help if you need it! 
 
 ## Excercise 2
 Instead of the program outputting "Hello, World!", modify it so that it instead says hello to you! E.g. "Hello, Alice!".
