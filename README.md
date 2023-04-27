@@ -1,6 +1,8 @@
 ## Coding course 
 The following document outlines the material of a course held for non-technical colleagues at WirelessCar. We will be going through the excercises and information below -- take your time, it's better to understand than to rush through! 
 
+Almost all concepts below are not unique to python -- similar features exist in most commonly used programming languages. 
+
 # Setting up Python
 We will be using the programming language Python in this course because it is easy to get started with. To save some time, we recommend that you download Python and a text editor beforehand.
 
@@ -108,6 +110,8 @@ Strange fruits: ['Tomato', 'Chickpea']
 ​
 # Randomness
 So far, all our programs have produced the same result every time they are executed. Lets change that! We are going to use a *pseudorandom number generator*. Rather than writing one ourselves, which is a bit complicated, we are going to **import** the `random` module.
+
+Imports are very important to building software at a larger scale-- rather than reinventing the wheel every time, developers are happy to use existing code in order to focus on building new stuff!
 ```python
 import random
 ​
