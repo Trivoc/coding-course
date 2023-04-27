@@ -175,3 +175,10 @@ while len(fruits) > 0:
 Write a program that reads a list of names and randomly divides them into groups of roughly equal size.
 ​
 TODO: Input from list/stdin? Names and number of groups
+
+
+Three questions:
+1. What was the most difficult thing today?
+2. What was the most fun thing today?
+3. A question about programming that you still want answered.
+​
