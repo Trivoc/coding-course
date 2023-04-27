@@ -1,7 +1,7 @@
 ## Coding course
 The following document outlines the material of a course held for non-technical colleagues at WirelessCar. We will be going through the excercises and information below -- take your time, it's better to understand than to rush through!
 
-*Any text in italics provide some extra information as we go through the exercises -- it may not be important to the task, but it will give some further context!* 
+*Any text in italics provide some extra information as we go through the exercises -- it may not be important to the task, but it will give some further context!*
 
 # Setting up Python
 We will be using the programming language Python in this course because it is easy to get started with. To save some time, we recommend that you download Python and a text editor beforehand.
@@ -21,21 +21,17 @@ The "Hello, World!" program above has two parts -- the "print()" function and th
 
 There will be many short code examples in these exercises. We encourage you to try to run them yourself as you read along!
 
-The text 'Hello world' is in the form of a string. Strings are, in simple terms, just plain text. In Python, a string is denoted as any text between a pair or quotation marks (such as 'a string'), or between a pair of double quotations marks (such as "another string").
-The print() function will output the provided string when run.
- 
-*While strings exists in almost all programming languages, languages differs in how to define them. In java, only double quotations denote a string! Such "rules" of a language is commonly referred to as the "syntax" of a language.*
-
 
 ## Exercise 1
-Make sure you can run the above code, either on your computer or in the browser. Follow the instructions in "Setting up Python" above, and ask us for help if you need it! 
+Make sure you can run the above code, either on your computer or in the browser. Follow the instructions in "Setting up Python" above, and ask us for help if you need it!
 
 ## Excercise 2
 Instead of the program outputting "Hello, World!", modify it so that it instead says hello to you! E.g. "Hello, Alice!".
 
 ## Excercise 3
-Extend the program to also say something about the weather, e.g. "Nice weather today!".
-**Tip:** Nothing stops you from adding more "print()" statements to your code...
+Extend the program to also say something about the weather on a new line, e.g. "Nice weather today!".
+
+**Tip:** Nothing stops you from adding more "print()"s to your code.
 
 # Variables
 Variables are names that we bind values to. For example, we can create three variables, `x`, `y`, and `sum` and output their values:
@@ -48,7 +44,7 @@ print(f'x: {x}')
 print(f'y: {y}')
 print(f'sum: {sum}')
 ```
-To output the value of a variable, we can write its name within curly brackets in the string. We also need to prefix the string with `f` (for format), otherwise the output would be `sum: {sum}` instead of `sum: 3**.
+To output the value of a variable, we can write its name within curly brackets in the string. We also need to prefix the string with `f` (for format), otherwise the output would be `sum: {sum}` instead of `sum: 3`.
 
 You make think of variables as labeled boxes that hold a single thing. The expression `x = 1` can be thought of as "put the value `1` into the box named `x`".
 
@@ -56,19 +52,29 @@ The equals sign does not have quite the same meaning as in mathematics. For exam
 ```python
 x = x + 1
 ```
+
 ## Exercise 1
 What do you think the expression means? Write some code to test your hypothesis (`print` is your friend!).
+
+## Exercise 2
+In our goal to print the sum of `x` and `y`, you don't actually need the variable `sum`. Try making the program behave the same without it! 
+
+*When it comes to programming, having less lines of code producing the same result is (usually) a good idea. We don't want to compromise on having the code readable by our colleagues, however!* 
 
 # Lists
 So far, we have used two *types* of values: `int`, short for integer (whole number); and `str`, short for "string", text. Now we get a third: `list`s!
 ```python
 fruits = ['Apple', 'Banana', 'Tomato', 'Chickpea']
 number_of_fruits = len(fruits)
-print(f'There are {number_of_fruints} fruits')
+print(f'There are {number_of_fruits} fruits')
 print(f'The fruits are: {fruits}')
 ```
 
 Here, `len` is a *function*, similar to `print`, that gets the length of a list.
+
+*While strings, integers, lists and functions exist in most programming languages, languages differs in how to define them. For instance in Java, only double quotations denote a string. 
+Such "rules" of a language is commonly referred to as the "syntax" of a language.*
+
 
 ## Exercise 1
 What do you think will be the output when running the following program?
@@ -88,8 +94,8 @@ What do you think this program with output? Try it! Did you get the result you w
 ## Exercise 3
 Guess the output of this program! Check if you are right.
 ```python
-second_fruit = del fruits[1]
-print(f'The second fruit was {second_fruit}')
+fruits = ['Apple', 'Banana', 'Tomato', 'Chickpea']
+del fruits[1]
 print(f'The remaining fruits are {fruits}')
 ```
 
@@ -198,7 +204,7 @@ Write a program that reads a list of names and randomly divides them into groups
 TODO: Input from list/stdin? Names and number of groups
 
 
-## Finally 
+## Finally
 
 Three questions:
 1. What was the most difficult thing today?
