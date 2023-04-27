@@ -1,10 +1,14 @@
+## Coding course
+The following document outlines the material of a course held for non-technical colleagues at WirelessCar. We will be going through the excercises and information below -- take your time, it's better to understand than to rush through!
 
-Three questions:
-1. What was the most difficult thing today?
-2. What was the most fun thing today?
-3. A question about programming that you still want answered.
+*Any text in italics provide some extra information as we go through the exercises -- it may not be important to the task, but it will give some further context!* 
 
 # Setting up Python
+We will be using the programming language Python in this course because it is easy to get started with. To save some time, we recommend that you download Python and a text editor beforehand.
+
+You can download Python here: https://www.python.org/; check the Download tab to find your operating system.
+
+For a text editor, we suggest that you download Visual Studio Code from here: https://code.visualstudio.com/Download
 
 
 # Hello World!
@@ -12,14 +16,27 @@ It has been tradition, at least since the famous 1978 book The C Programming Lan
 ```python
 print('Hello, World!')
 ```
-TODO: Explain `print` and strings
+
+The "Hello, World!" program above has two parts -- the "print()" function and the provided parameter, which is 'Hello World'.
 
 There will be many short code examples in these exercises. We encourage you to try to run them yourself as you read along!
+
+The text 'Hello world' is in the form of a string. Strings are, in simple terms, just plain text. In Python, a string is denoted as any text between a pair or quotation marks (such as 'a string'), or between a pair of double quotations marks (such as "another string").
+The print() function will output the provided string when run.
+ 
+
+*While strings exists in almost all programming languages, languages differs in how to define them. In java, only double quotations denote a string! Such "rules" of a language is commonly referred to as the "syntax" of a language.*
+
 
 ## Exercise 1
 Make sure you can run the above code, either on your computer or in the browser.
 
-TODO: Add some instructions
+## Excercise 2
+Instead of the program outputting "Hello, World!", modify it so that it instead says hello to you! E.g. "Hello, Alice!".
+
+## Excercise 3
+Extend the program to also say something about the weather, e.g. "Nice weather today!".
+**Tip:** Nothing stops you from adding more "print()" statements to your code...
 
 # Variables
 Variables are names that we bind values to. For example, we can create three variables, `x`, `y`, and `sum` and output their values:
@@ -180,3 +197,11 @@ while len(fruits) > 0:
 Write a program that reads a list of names and randomly divides them into groups of roughly equal size.
 
 TODO: Input from list/stdin? Names and number of groups
+
+
+## Finally 
+
+Three questions:
+1. What was the most difficult thing today?
+2. What was the most fun thing today?
+3. A question about programming that you still want answered.
