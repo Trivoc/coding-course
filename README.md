@@ -1,5 +1,13 @@
+## Coding course 
+The following document outlines the material of a course held for non-technical colleagues at WirelessCar. We will be going through the excercises and information below -- take your time, it's better to understand than to rush through! 
 
 # Setting up Python
+We will be using the programming language Python in this course because it is easy to get started with. To save some time, we recommend that you download Python and a text editor beforehand.
+
+You can download Python here: https://www.python.org/; check the Download tab to find your operating system.
+
+For a text editor, we suggest that you download Visual Studio Code from here: https://code.visualstudio.com/Downloa
+Don't worry if you have issues with installation; we have a backup option that runs in the web browser in that case. 
 ​
 ​
 # Hello World!
