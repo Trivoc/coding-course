@@ -15,14 +15,22 @@ It has been tradition, at least since the famous 1978 book The C Programming Lan
 ```python
 print('Hello, World!')
 ```
-TODO: Explain `print` and strings
-​
+The "Hello, World!" program above has two parts -- the "print()" function and the provided parameter, which is 'Hello World'. 
+
 There will be many short code examples in these exercises. We encourage you to try to run them yourself as you read along!
-​
+
+The print() function will output the provided parameter when run. 
+The parameter 'Hello world' is in the form of a String. Strings are, in simple terms, just plain text. In python, a String is denoted as any text between a pair or quotation marks (such as 'a string'), or between a pair of double quotations marks (such as "another string"). Strings as a concept exists in most commonly used programming languages.
+​​
 ## Exercise 1
 Make sure you can run the above code, either on your computer or in the browser.
 ​
-TODO: Add some instructions
+## Excercise 2
+Instead of the program outputting "Hello, World!", modify it so that it instead says hello to you! E.g. "Hello, Alice!". 
+
+## Excercise 3
+Extend the program to also say something about the weather, e.g. "Nice weather today!".
+
 ​
 # Variables
 Variables are names that we bind values to. For example, we can create three variables, `x`, `y`, and `sum` and output their values:
@@ -114,7 +122,7 @@ Here, `randint` is just a function in the `random` module. The numbers, `0` and 
 ## Exercise 1
 What is the maximum number that `random.randint(0, 100)` could generate? `100`? `99`? Finding answers to these kinds of questions is an important skill in programming. Use your favorite search engine to find the answer!
 ​
-## Exercise 2
+## Exercise 
 Write a program that outputs a random fruit.
 <!--
 ```python
