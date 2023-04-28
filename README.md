@@ -10,6 +10,8 @@ You can download Python here: https://www.python.org/; check the Download tab to
 
 For a text editor, we suggest that you download Visual Studio Code from here: https://code.visualstudio.com/Download
 
+*You can use any text editor, but proper tools and software can help point out errors in your code, much like a spell-checker aiding you in Microsoft Word. Tangentially, Microsoft Word is **not** a text editor and is unfit for programming.* 
+
 
 # Hello World!
 It has been tradition, at least since the famous 1978 book The C Programming Language, for new programmers' first program to output the phrase "Hello, World!". This is how you do it in Python:
@@ -23,7 +25,7 @@ There will be many short code examples in these exercises. We encourage you to t
 
 
 ## Exercise 1
-Make sure you can run the above code, either on your computer or in the browser. Follow the instructions in "Setting up Python" above, and ask us for help if you need it!
+Make sure you can run the above code, either on your computer or in the browser. In either choice, you should have an editor window, into which you can copy your code, and a button to actually run your code, which will output program results to a secondary window. Follow the instructions in "Setting up Python" above, and ask us for help if you need it!
 
 ## Excercise 2
 Instead of the program outputting "Hello, World!", modify it so that it instead says hello to you! E.g. "Hello, Alice!".
@@ -53,10 +55,10 @@ The equals sign does not have quite the same meaning as in mathematics. For exam
 x = x + 1
 ```
 
-## Exercise 1
+## Exercise 4
 What do you think the expression means? Write some code to test your hypothesis (`print` is your friend!).
 
-## Exercise 2
+## Exercise 5
 In our goal to print the sum of `x` and `y`, you don't actually need the variable `sum`. Try making the program behave the same without it! 
 
 *When it comes to programming, having less lines of code producing the same result is (usually) a good idea. We don't want to compromise on having the code readable by our colleagues, however!* 
@@ -76,14 +78,14 @@ Here, `len` is a *function*, similar to `print`, that gets the length of a list.
 Such "rules" of a language is commonly referred to as the "syntax" of a language.*
 
 
-## Exercise 1
+## Exercise 6
 What do you think will be the output when running the following program?
 ```python
 mystery = len([])
 print(f'{mystery}')
 ```
 
-## Exercise 2
+## Exercise 7
 We can get a specific element from a list as follows:
 ```python
 fruits = ['Apple', 'Banana', 'Tomato', 'Chickpea']
@@ -91,23 +93,26 @@ print(f'One of the fruits is {fruits[1]}')
 ```
 What do you think this program with output? Try it! Did you get the result you were expecting? Why/why not?
 
-## Exercise 3
+## Exercise 8
 Guess the output of this program! Check if you are right.
 ```python
 fruits = ['Apple', 'Banana', 'Tomato', 'Chickpea']
-del fruits[1]
+removed = fruits.pop(1)
+print(f'The removed fruit is {removed}')
 print(f'The remaining fruits are {fruits}')
 ```
 
-## Exercise 4
+*"Popping" a list is common programmatic slang for removing the last item of a list. In Python, the developer may optinally provide a number, denoting the "place" of the item in the list that they want removed. Have you found the quirk in how we tend to count in programming by now?*  
+
+## Exercise 9
 What does the following program do?
 ```python
 fruits = ['Apple', 'Banana']
 fruits.append('Lemon')
-print('Fruits: {fruits}')
+print(f'Fruits: {fruits}')
 ```
 
-## Exercise 5
+## Exercise 10
 Write a program that starts with the following line:
 ```
 fruits = ['Apple', 'Banana', 'Tomato', 'Chickpea']
@@ -116,6 +121,29 @@ The output of the program should be:
 ```
 Strange fruits: ['Tomato', 'Chickpea']
 ```
+
+<!-- 
+```python
+fruits = ['Apple', 'Banana', 'Tomato', 'Chickpea']
+print(f'Strange fruits: {["Tomato", "ChickPea"]}')
+```
+-->
+
+## Exercise 11
+You can even put lists in lists! Guess what this program is outputting, and try running it:
+
+```python
+red_fruits = ['Tomato', 'Apple']
+yellow_fruits = ['Banana', 'Pineapple']
+all_fruits = [red_fruits, yellow_fruits]
+
+print(f'One of the fruits is {all_fruits[1][1]}.')
+
+```
+
+Adjust the program above to instead output
+`One of the fruits is Tomato.`
+
 
 # Randomness
 So far, all our programs have produced the same result every time they are executed. Lets change that! We are going to use a *pseudorandom number generator*. Rather than writing one ourselves, which is a bit complicated, we are going to **import** the `random` module.
@@ -130,10 +158,10 @@ print(f'Second random number {random_number_2}')
 ```
 Here, `randint` is just a function in the `random` module. The numbers, `0` and `100`, is the range that we want to pick a number from.
 
-## Exercise 1
+## Exercise 12
 What is the maximum number that `random.randint(0, 100)` could generate? `100`? `99`? Finding answers to these kinds of questions is an important skill in programming. Use your favorite search engine to find the answer!
 
-## Exercise 2
+## Exercise 13
 Write a program that outputs a random fruit.
 <!--
 ```python
@@ -147,9 +175,13 @@ print('Your random fruit is %s' % random_fruit)
 ```
 -->
 
+
 # Loops
 
-`while`-loops. Lets look at an example:
+Loops are a tool for running the same piece of code multiple times. You can either use a loop to run some code a set number of time, or you can do more complex constructs in which you want to run some piece of code "once for each item in a list" -- there are different types of loops that are useful depending on what you as a programmer is trying to achieve.  
+
+
+For now, we will stick `while`-loops. Lets look at an example:
 ```python
 i = 0
 while i < 2:
@@ -168,7 +200,9 @@ The execution of this program will go something like this:
 8. Check if `i < 2`. It is not (`i` is `2`). Skip over the loop body.
 9. Output "Done".
 
-## Exercise 1
+*Indentation is important in Python! Not indenting the loop body will result in your program not being able to run -- if you are using VSCode (with Python support installed) as your editor, it will tell you this much.* 
+
+## Exercise 14
 Write a program using a `while`-loop that outputs the following:
 ```
 1
@@ -178,15 +212,14 @@ Write a program using a `while`-loop that outputs the following:
 16
 ```
 
-## Exercise 2
+## Exercise 15
 Starting with our fruit list, write a program that outputs the fruits, one per line, in order.
 
-## Exercise 3
+## Exercise 16
 Repeat exercise 2 but output the fruits in reverse order.
 
-## Exercise 4
+## Exercise 17
 Repeat exercise 2 again, but output the fruits in random order.
-
 <!--
 ```python
 fruits = ['Apple', 'Banana', 'Tomato', 'Chickpea']
@@ -196,12 +229,92 @@ while len(fruits) > 0:
 ```
 -->
 
+
 # Input
 
-# Random groups
-Write a program that reads a list of names and randomly divides them into groups of roughly equal size.
+'Input' is a collective term for when a user provides any sort of information to a program. A simple example is when you type in your password to start you computer: that is you providing input to the program that opens your desktop. 
 
-TODO: Input from list/stdin? Names and number of groups
+Input can be provided in many ways, but for now, we will stick with providing text input to your running program. In Python, prompting a user for input is done as below: 
+
+```python
+x = input("Type something here: ")
+print(f"You wrote {x}")
+```
+
+When you run this program, it will *halt* until the user provides any input. Write whatever you like and press enter to provide the written text as input. 
+
+## Exercise 18 
+
+Write a program that accepts user input 3 times, and then outputs all the user provided input in a list. 
+
+# Random groups"
+Now we will tie all of the previous lessons together. You are going to build a program that can divide a number of people into groups of roughly equal size. 
+
+This could be useful if you ever find yourself in a situation where you need to divide your attendees in a meeting into breakout rooms, are deciding on teams on the afterwork for you and your colleagues, or similar.  
+
+We will build this step by step, starting from the problem specification. This is analogous to how we work as developers; when a problems need solving, we need to break down what is needed and what is possible with the tools you have, and make some assumptions that we challenge along the way. 
+
+## Excercise 19
+
+Let's begin with building our list of people. Write a program that continously asks the user to input a name until the user inputs "done". E.g., the output after a program has been run could look like: 
+
+```
+Please enter a name: Victor
+Please enter another name: Lukas
+Please enter another name: done
+You entered the names: ['Victor', 'Lukas']
+
+```
+
+**Tip:** Previously, we used the "less-than" operator (`<`) for a loop. You probably want to try out the "not-equal" operator `!=` this time. Also, note that the strings `"done"` and `"Done"` are *not* the same!
+
+<!-- 
+x = input("Please enter a name: ")
+people = []
+while x != "done":
+    people.append(x)
+    x = input("Please enter another name: ")
+
+print(f"You entered the names: {people}")
+-->
+
+## Excercise 20
+
+Randomly divide the list of names you just created into two different lists of equal size (or as close as possible, at the very least). 
+
+## Exercise 21
+
+TODO: Extend to arbitrary number of "groups", present modulo and integer division?
+
+**Tip:** There are some maths involved here. The standard operators are present, of course:
+
+```
+3 + 2 = 5
+3 - 2 = 1
+2 * 3 = 6
+9 / 2 = 4.5 
+```
+But concerning division, there are two operators more: 
+```
+11 // 4 = 2
+11 % 4 = 3
+```
+`//` denotes integer division. It will divide evenly into wholes, and leave out any decimals. The modulo operator `%`is its counterpart, which returns the remainder when performing integer division. For our purposes with this task, assume we have 11 people which we divide into groups of 4: we will have 2 groups with 4 members, and there will be 3 people left over. In our case though, these 3 people will probably make up another group!  
+
+
+<!--
+groupsize = len(people) / 2
+second_group = []
+
+while len(second_group) < groupsize:
+    random_index = random.randint(0, len(people))
+    second_group.append(people.pop(random_index))
+
+print(f'First group: {people}')
+print(f'Second group: {second_group}')
+-->
+
+
 
 
 ## Finally
