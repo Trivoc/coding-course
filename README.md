@@ -326,7 +326,7 @@ Here, `x` will be `3.5` while `y` will be `3`. As a side note, there is also the
 
 ## Extra Credit 1: 
 
-If you have time: Rewrite the program (you could save your first program as a simple file if you like) so that it will ask the user for the number of groups desired rather than group size, and divides the users accordingly. 
+If you have time: Rewrite the program (you could save your first program as a separate file if you like to keep it) so that it will ask the user for the number of groups desired rather than group size, and divides the users accordingly. 
 
 
 
