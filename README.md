@@ -279,41 +279,54 @@ print(f"You entered the names: {people}")
 -->
 
 ## Excercise 20
+Now, let's start looking into the groups. Let's add some code after inputing a list of people that asks the user of how many people should be in a single group, and to pick out that many names at random from our "master list" of names to fill said group.
 
-Randomly divide the list of names you just created into two different lists of equal size (or as close as possible, at the very least). 
+Let's start with creating one group for now and leave the rest of the names untouched.
 
-## Exercise 21
+**Tip:** You will likely run into trouble when trying to use the input number in this exercise: this is due to all variables you are using having a type, as mentioned in the *Lists* sections. Python is generally able to "guess" what you need, but when asking a user for input, the input will always be considered a string (text). 
 
-TODO: Extend to arbitrary number of "groups", present modulo and integer division?
-
-**Tip:** There are some maths involved here. The standard operators are present, of course:
-
+In order to convert a string to a integer, use the `int()` function: 
+```python
+string_value = "5"
+integer_value = int(string_value)
 ```
-3 + 2 = 5
-3 - 2 = 1
-2 * 3 = 6
-9 / 2 = 4.5 
-```
-But concerning division, there are two operators more: 
-```
-11 // 4 = 2
-11 % 4 = 3
-```
-`//` denotes integer division. It will divide evenly into wholes, and leave out any decimals. The modulo operator `%`is its counterpart, which returns the remainder when performing integer division. For our purposes with this task, assume we have 11 people which we divide into groups of 4: we will have 2 groups with 4 members, and there will be 3 people left over. In our case though, these 3 people will probably make up another group!  
+
+What do you think happens if you  use the `int()` function on a non-numerical string? Feel free to try!
 
 
 <!--
-groupsize = len(people) / 2
-second_group = []
+group_size = int(input("Please enter group size: "))
+first_group = []
 
-while len(second_group) < groupsize:
-    random_index = random.randint(0, len(people))
-    second_group.append(people.pop(random_index))
+while len(first_group) < group_size:
+    first_group.append(people.pop(random.randint(0, len(people) - 1)))
 
-print(f'First group: {people}')
-print(f'Second group: {second_group}')
+print(first_group)
 -->
 
+## Exercise 21
+
+ Finally, let's wrap up the program.
+
+ You can calculate the total number of groups needed with some simple maths, as long as you know the operators -- the `/`  operator is used for division, while the `//` operator is integer division, which may be more relevant here: 
+
+ ```python
+ x = 7 / 2 
+ y = 7 // 2
+
+ print(x)
+ print(y)
+ ```
+
+Here, `x` will be `3.5` while `y` will be `3`. As a side note, there is also the modulo operator `%` which calculates the remainder of a division, so `z = 7 % 2` will store the value `1` in `z`. 
+
+**Tip: ** You may want to use a "list of lists" in this case to store all your groups.
+
+**Tip: ** Loops can be written in loops; might be useful here. 
+
+## Extra Credit 1: 
+
+If you have time: Rewrite the program (you could save your first program as a simple file if you like) so that it will ask the user for the number of groups desired rather than group size, and divides the users accordingly. 
 
 
 
