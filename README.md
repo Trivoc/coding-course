@@ -104,7 +104,7 @@ print(f'Fruits: {fruits}')
 
 ## Exercise 9
 Write a program that starts with the following line:
-```
+```python
 fruits = ['Apple', 'Banana', 'Tomato', 'Chickpea']
 ```
 The output of the program should be:
