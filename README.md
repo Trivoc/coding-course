@@ -320,9 +320,9 @@ print(first_group)
 
 Here, `x` will be `3.5` while `y` will be `3`. As a side note, there is also the modulo operator `%` which calculates the remainder of a division, so `z = 7 % 2` will store the value `1` in `z`. 
 
-**Tip: ** You may want to use a "list of lists" in this case to store all your groups.
+**Tip:** You may want to use a "list of lists" in this case to store all your groups.
 
-**Tip: ** Loops can be written inside other loops; might be useful here. 
+**Tip:** Loops can be written inside other loops; might be useful here. 
 
 <!-- FULL PROGRAM: 
 
