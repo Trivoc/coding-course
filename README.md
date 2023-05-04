@@ -282,9 +282,11 @@ print(first_group)
 -->
 
 ## Exercise 20
- Finally, let's wrap up the program. Now, we want to create groups of the given size until every name provided at the start has been placed in a group.
+ Finally, let's wrap up the program. Create not only one group, but as many groups necessary for the number of names given to the program. Make sure no one is left without a group! 
+ 
+There are many ways one can do this, but in case you want to do some maths as part of your program, here is how: 
 
-You can calculate the total number of groups needed with some simple maths, as long as you know the operators. The `/`  operator is used for division, while the `//` operator is integer division, which may be more relevant here:
+Maths is pretty straight forward in Python as long as you know the available operators. We have already shown examples of addition and subtraction as part of other exercises, and there is also multiplication with the `*` operator. The `/`  operator is used for division with decmals, while the `//` operator is integer division, which may be more relevant here:
 
  ```python
  x = 7 / 2
@@ -295,6 +297,8 @@ You can calculate the total number of groups needed with some simple maths, as l
  ```
 
 Here, `x` will be `3.5` while `y` will be `3`. As a side note, there is also the remainder operator `%` which calculates the remainder of a division, so `z = 7 % 2` will store the value `1` in `z`.
+
+For the non-math inclined, don't worry -- this program is quite possible to write without multiplication or division.  
 
 **Tip:** You may want to use a "list of lists" in this case to store all your groups.
 
