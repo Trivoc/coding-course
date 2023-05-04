@@ -180,7 +180,7 @@ The execution of this program will go something like this:
 2. Check if `i < 2`. It is (`i` is `0`), continue into the **loop body** &mdash; the indented part.
 3. Set `i` to the previous value of `i`, plus `1`. So `i` is now `1`.
 4. Output "i = 1". The end of the loop body has been reached, return to the beginning of the loop (line 2).
-5. Check if `i < 2`. It is (`i` is `0`), continue into the loop body.
+5. Check if `i < 2`. It is (`i` is `1`), continue into the loop body.
 6. Set `i` to `2`.
 7. Output "i = 2". Return to line 2.
 8. Check if `i < 2`. It is not (`i` is `2`). Skip over the loop body.
